@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tesla Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Fonts -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="media/tab-logo.png">
+  </head>
+  <body>
+    <header>
+      <div class="header-div">
+        <img class="logo" src="media/logo.png" alt="logo" />
+        <nav class="navbar-middle">
+          <ul class="nav-list">
+            <li><a href="#">Vehicles</a></li>
+            <li><a href="#">Energy</a></li>
+            <li><a href="#">Charging</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="https://shop.tesla.com/en_ae?redirect=no">Shop</a></li>
+          </ul>
+        </nav>
+
+        <nav class="navbar-right">
+          <ul class="nav-icon">
+            <li>
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-question-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                  />
+                  <path
+                    d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-globe-americas"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="m-Y">
+        <div class="model">
+          <div class="text">
+            <h2>Model Y</h2>
+          </div>
+          <div class="btn">
+            <a href="https://www.tesla.com/en_ae/modely/design#overview" target="_blank">
+              <button class="order">Order Now</button>
+            </a>
+            <a href="https://www.tesla.com/en_ae/drive?selectedModel=ModelY" target="_blank">
+              <button class="test">Test Drive</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="m-3">
+        <div class="model">
+          <div class="text">
+            <h2>Model 3</h2>
+          </div>
+          <div class="btn">
+            <a href="https://www.tesla.com/en_ae/model3/design#overview" target="_blank">
+              <button class="order1">Order Now</button>
+            </a>
+            <a href="https://www.tesla.com/en_ae/drive?selectedModel=ModelY" target="_blank">
+              <button class="test1">Test Drive</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="m-S">
+        <div class="model">
+          <div class="text">
+            <h2>Model S</h2>
+          </div>
+          <div class="btn">
+            <a href="https://www.tesla.com/en_ae/models/design#overview" target="_blank">
+              <button class="order1">Order Now</button>
+            </a>
+            <a href="https://www.tesla.com/en_ae/drive?selectedModel=ModelY" target="_blank">
+              <button class="test1">Test Drive</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="m-X">
+        <div class="model">
+          <div class="text">
+            <h2>Model X</h2>
+          </div>
+          <div class="btn">
+            <a href="https://www.tesla.com/en_ae/modelx/design#overview" target="_blank">
+              <button class="order1">Order Now</button>
+            </a>
+            <a href="https://www.tesla.com/en_ae/drive?selectedModel=ModelY" target="_blank">
+              <button class="test1">Test Drive</button>
+            </a>
+          </div>
+        </div>        
+      </section>
+
+      <section class="experience-tesla">
+        <video autoplay muted loop id="bg-video">
+          <source src="video/experience-tesla.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="model">
+          <div class="text">
+            <h2 class="exp-text">Experience Tesla</h2>
+            <p class="exp-text">Schedule a Test Drive Today</p>
+          </div>
+          <div class="btn1">
+            <a href="https://www.tesla.com/en_ae/drive" target="_blank">
+              <button class="test-drive">Test Drive</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="solor">
+        <div class="model">
+          <div class="text1">
+            <h2>Solar and Powerwall</h2>
+            <p>Power Everything</p>
+          </div>
+          <div class="btn1">
+            <a href="https://www.tesla.com/en_ae/energy" target="_blank">
+              <button class="learn-more-btn">Learn More</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="accessories">
+        <div class="model">
+          <div class="text2">
+            <h2>Accessories</h2>
+          </div>
+          <div class="btn1">
+            <a href="https://shop.tesla.com/en_ae?tesref=true" target="_blank">
+              <button class="shop-now-btn">Shop Now</button>
+            </a>
+          </div>
+        </div> 
+      </section>
+    </main>
+
+    <footer>
+      <ul class="footer-links">
+        <div class="footer-links-div">
+          <a href="https://www.tesla.com/en_ae/about">Tesla © 2024</a>
+          <a href="https://www.tesla.com/en_ae/legal">Privacy & Legal</a>
+          <a href="https://www.tesla.com/en_ae/contact">Contact
+          <a href="https://www.tesla.com/en_ae/blog">News</a>
+          <a href="https://www.tesla.com/en_ae/updates">Get Updates</a>
+          <a href="https://www.tesla.com/en_ae/findus/list">Location</a>
+        </div>
+      </ul>
+    </footer>
+  </body>
+</html>

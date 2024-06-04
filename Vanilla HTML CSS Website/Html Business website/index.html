@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple-Website</title>
+    <!-- Lightslider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="main-header">
+        <div class="logo">
+          <a href="#">
+            <img class="head-logo" src="image/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <div class="search">
+          <form method="GET">
+            <input
+              type="search"
+              name="search-bar"
+              placeholder="Search for..."
+            />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </header>
+
+      <!-- NavBar -->
+
+      <nav class="main-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="pages/service.html">Service</a>
+            <ul class="drop">
+              <li><a href="#">Service One</a></li>
+              <li><a href="#">Service Two</a></li>
+              <li><a href="#">Service Three</a></li>
+            </ul>
+          </li>
+          <li><a href="pages/product.html">Product</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Slider -->
+
+      <section class="banner-slider">
+        <ul id="adaptive">
+          <li><img src="image/istockphoto-1311598658-1024x1024.jpg" alt="slide1" /></li>
+          <li><img src="image/istockphoto-1696781145-1024x1024.jpg" alt="slide2" /></li>
+          <li><img src="image/istockphoto-1827291486-1024x1024.jpg" alt="slide3" /></li>
+        </ul>
+      </section>
+
+      <!-- Main Page -->
+
+      <section class="content-holder">
+        <main class="content">
+          <h1>Main Heading for the Site</h1>
+          <h2>Sub Heading</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+            rerum commodi, deleniti quaerat natus beatae maiores id, incidunt
+            consectetur quos accusantium aliquid nihil, optio sit eaque velit
+            molestias debitis iusto?
+          </p>
+          <p>
+            Perferendis eum, iste est exercitationem libero ab illo aliquam
+            ducimus et laborum eveniet placeat aliquid soluta voluptates, hic
+            vero! Consectetur officia accusantium inventore voluptate incidunt,
+            sit earum! Dolorem, possimus mollitia.
+          </p>
+          <p>
+            Porro illum nobis maxime sapiente, sint natus quod molestias non ab
+            eaque, animi at? Quo hic accusantium fugiat sit iure eum facere
+            ipsam modi doloribus, est molestiae, aliquid delectus
+            necessitatibus.
+          </p>
+        </main>
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+          <div class="widget">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Linkedin</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Footer -->
+
+      <section class="footer-widget-holder">
+        <div class="footer-widget">
+          <a href="#">
+            <img class="head-logo" src="image/logo.png" alt="logo" />
+          </a>
+          <h3>Address</h3>
+          <address>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </address>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Sitemap</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Sitemap</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Sitemap</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p><small>Copyright &copy; MyWebsite 2025 </small></p>
+      </footer>
+    </div>
+
+    <!-- Light Slider cdn -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+
+    <!-- Lightslider code -->
+    <script>
+      $(document).ready(function () {
+        $("#adaptive").lightSlider({
+          adaptiveHeight: true,
+          item: 1,
+          slideMargin: 0,
+          loop: true,
+        });
+      });
+    </script>
+  </body>
+</html>

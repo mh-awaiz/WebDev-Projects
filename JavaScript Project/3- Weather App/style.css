@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes buttonAnimation {
+  0% {
+    background-image: linear-gradient(
+      to right bottom,
+      #9a348e,
+      #b1468e,
+      #c55990,
+      #d66e94,
+      #e5849a
+    );
+  }
+  100% {
+    background-image: linear-gradient(
+      to right bottom,
+      #da627d,
+      #e5717b,
+      #ef807a,
+      #f6907b,
+      #fca17d
+    );
+  }
+}
+
+body {
+  background-image: linear-gradient(
+    to left top,
+    #0d0628,
+    #261844,
+    #482360,
+    #6f2d79,
+    #9a348e
+  );
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Roboto Mono, sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+main {
+  height: 70vh;
+  width: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  padding: 10px;
+  margin: top;
+}
+
+.cityInput {
+  padding: 6px 20px;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 2px;
+  width: 210px;
+  margin-bottom: 35px;
+}
+
+button[type="submit"] {
+  padding: 6px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  background-image: linear-gradient(
+    to right bottom,
+    #9a348e,
+    #b1468e,
+    #c55990,
+    #d66e94,
+    #e5849a
+  );
+  transition: all 0.15s ease-in-out;
+}
+button[type="submit"]:hover {
+  background-image: linear-gradient(
+    to right bottom,
+    #da627d,
+    #e5717b,
+    #ef807a,
+    #f6907b,
+    #fca17d
+  );
+  cursor: pointer;
+}
+button[type="submit"]:active {
+  opacity: 0.5;
+  animation-name: buttonAnimation;
+  animation-duration: 0.15s;
+}
+
+.card {
+  background-image: linear-gradient(
+    to right bottom,
+    #8a2be2,
+    #5e2ab3,
+    #392384,
+    #1d1855,
+    #0d0628
+  );
+  padding: 5px;
+  height: 50vh;
+  width: 50vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 100px -10px #c559913b;
+  border-radius: 10px;
+}
+
+.card > h2, p {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.card > p {
+  font-size: 15px;
+}
+
+.card > .emoji {
+  font-size: 50px;
+}

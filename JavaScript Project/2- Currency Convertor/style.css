@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: Ubuntu;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(96, 137, 202);
+}
+
+.container {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(65, 104, 166);
+  max-width: 650px;
+  border-radius: 10px;
+  margin: auto;
+  height: 55vh;
+  padding: 5px;
+  margin-top: 10%;
+}
+
+input {
+  padding: 5px;
+  border-radius: 20px;
+  border-style: solid;
+  width: 350px;
+  text-align: center;
+}
+
+.dropdown {
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+
+.final {
+  grid: a 40px 40px 1fr;
+}
+
+.sub-btn {
+  max-width: 200px;
+  border-style: none;
+  border-radius: 5px;
+  padding: 15px 30px ;
+  background-color: rgb(214, 87, 174);
+  font-weight: 600;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.sub-btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.sub-btn:active {
+  opacity: 1;
+}
+
+.bi-currency-exchange {
+  color: rgb(214, 87, 174);
+}
+ 
+.select-container img {
+  max-width: 3rem;
+}
+
+.from, .to {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.select-container{
+  display: flex;
+  width: 6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-container > img, .from-option, .to-option {
+  padding: 5px;
+}
+
+.amount {
+  margin-bottom: 0px;
+}

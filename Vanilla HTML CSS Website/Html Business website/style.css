@@ -1,0 +1,180 @@
+* {
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+.head-logo {
+  width: 120px;
+}
+
+.container {
+  width: 1000px;
+  height: auto;
+  margin: 10px auto;
+  background-color: white;
+  border: 1px solid gainsboro;
+  box-shadow: 8px 0px 25px rgba(0, 0, 0, 0.1);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.search form > input[type="search"] {
+  border: 1px solid gainsboro;
+  padding: 10px;
+  margin-right: -4px;
+}
+
+.search form > button[type="submit"] {
+  border: 0px;
+  color: white;
+  background-color: black;
+  padding: 11px;
+  transition: all 0.3;
+}
+
+button[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.main-menu {
+  background-color: black;
+  color: white;
+}
+
+.main-menu > ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.main-menu > ul > li > a {
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  display: inline-block;
+  transition: all 0.3 ease-in-out;
+}
+
+.main-menu > ul > li > a:hover {
+  background-color: white;
+  color: black;
+}
+
+.drop {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: absolute;
+  display: none;
+}
+
+.drop > li > a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(100, 96, 96);
+  padding: 15px;
+  display: inline-block;
+  width: 100%;
+  transition: all 0.3 ease-in-out;
+}
+
+.drop > li > a:hover {
+  color: black;
+  background-color: white;
+}
+
+.main-menu > ul > li > a :hover .drop {
+  display: block;
+}
+
+.drop :hover{
+  display: block;
+}
+
+.lSPager {
+  margin-top: -25px !important;
+}
+
+.content-holder {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1px solid silver;
+  background-color: rgb(94, 192, 192);
+}
+
+.content-holder .content {
+  padding: 20px;
+  width: 80%;
+  background-color: aliceblue;
+}
+
+h2 {
+  font-size: medium;
+  color: darkgray;
+}
+
+.sidebar {
+  padding: 25px;
+  width: 20%;
+  /* text-decoration: underline; */
+}
+
+h3 {
+  color: white;
+  font-weight: 550;
+}
+
+.widget,
+ul {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.widget,
+ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.widget,
+ul > li > a:hover {
+  color: black;
+  font-weight: 500;
+}
+
+.footer-widget-holder {
+  display: flex;
+  justify-content: space-around;
+  background: #000;
+  color: white;
+}
+
+.footer-widget {
+  padding: 15px;
+  font-size: small;
+  color: rgb(235, 3, 3);
+}
+
+.footer-widget > ul > li > a:hover {
+  color: rgb(55, 113, 214);
+}
+
+.site-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
